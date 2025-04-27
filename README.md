@@ -68,7 +68,9 @@ Multiple attention heads allow the model to:
 * Focus on different aspects simultaneously: Each head can specialize in different types of relationships (e.g., syntactic relationships, semantic similarities, or long-distance dependencies)
 * Capture different context patterns: Some heads might focus on local context while others capture long-range dependencies
 
-E.g. Consider this sentence - "The painter paints a womon with a brush". This sentence has 2 meeanings. With MHA, we aim to capture both the meanings via 'heads'.
+E.g. Consider this sentence - "The painter paints a woman with a brush". 
+This sentence has 2 meeanings - "[A painter] (subject) paints a [woman] (object) with a brush" and "[A painter] (subject) paints [a woman with a brush] (object)"
+With MHA, we aim to capture both the meanings via 'heads'.
 
 ## Key Value cache
 Coming Soon...

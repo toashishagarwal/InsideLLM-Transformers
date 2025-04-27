@@ -56,9 +56,24 @@ The final result of Causal Attention is always a traingular zero that appears ab
 [Implementation-Causal Attention](CausalAttention.ipynb)
 
 ## Multi Head Attention
-Coming Soon...
+Multi-head attention is an enhancement to the standard attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions. Rather than performing a single attention function with queries, keys, and values, multi-head attention:
+
+* Splits the embedding dimension into multiple smaller parts (heads)
+* Performs attention independently on each part
+* Concatenates the results
+* Projects back to the original dimension
+
+### Why Multiple Heads?
+Multiple attention heads allow the model to:
+* Focus on different aspects simultaneously: Each head can specialize in different types of relationships (e.g., syntactic relationships, semantic similarities, or long-distance dependencies)
+* Capture different context patterns: Some heads might focus on local context while others capture long-range dependencies
+
+E.g. Consider this sentence - "The painter paints a womon with a brush". This sentence has 2 meeanings. With MHA, we aim to capture both the meanings via 'heads'.
 
 ## Key Value cache
+Coming Soon...
+
+## Grouped Query Attention
 Coming Soon...
 
 ## Multi Head Latent Attention

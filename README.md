@@ -72,6 +72,8 @@ E.g. Consider this sentence - "The painter paints a woman with a brush".
 This sentence has 2 meeanings - "[A painter] (subject) paints a [woman] (object) with a brush" and "[A painter] (subject) paints [a woman with a brush] (object)"
 With MHA, we aim to capture both the meanings via 'heads'.
 
+[Implementation-Multi Head Attention](MultiHeadAttention.ipynb)
+
 ## Key Value cache
 Coming Soon...
 

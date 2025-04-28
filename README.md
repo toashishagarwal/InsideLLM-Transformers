@@ -78,7 +78,20 @@ With MHA, we aim to capture both the meanings via 'heads'.
 Coming Soon...
 
 ## Grouped Query Attention
-Coming Soon...
+Grouped Query Attention (GQA) is an optimization technique for large language models that reduces computational requirements while maintaining performance. In standard multi-head attention, we have the same number of query (Q), key (K), and value (V) heads. GQA reduces the number of K/V heads while keeping the same number of Q heads, which means:
+
+* Multiple query heads share the same key-value heads
+* This reduces the memory footprint and computational requirements
+* Performance remains comparable to models with full MHA
+
+### Why GQA is Important
+
+* Memory Efficiency: Fewer K/V heads means less memory needed for storing these matrices
+* Computational Savings: Reduces computation for the K/V projections and attention calculations
+* Inference Speedup: Particularly beneficial for serving large models
+* Minimal Performance Impact: Studies show minimal degradation in model quality
+
+[Implementation-Grouped Query Attention](GroupedQueryAttention.ipynb)
 
 ## Multi Head Latent Attention
 Coming Soon...
